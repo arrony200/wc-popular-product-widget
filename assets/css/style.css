@@ -1,0 +1,11 @@
+.propular-product-widget {
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+a.propular-product-img {
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+}
