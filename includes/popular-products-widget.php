@@ -46,18 +46,18 @@ class PPFW_Popular_Products_Widget extends WP_Widget{
 
 		<p>
        	<label for="<?php echo $this->get_field_id('post_per_page') ?>"><?php esc_html_e('Posts Per Page:','popular-products-for-woocommerce');?></label>
-       	<input type="text" id="<?php echo $this->get_field_id('post_per_page') ?>" name="<?php echo $this->get_field_name('post_per_page') ?>"
+       	<input type="text" id="<?php echo $this->get_field_id('post_per_page') ?>" name="<?php echo esc_attr($this->get_field_name('post_per_page')); ?>"
        	value="<?php echo esc_attr ($post_per_page); ?>" class="widefat">
        </p>
 
        <p>
-       <input type="checkbox" id="<?php echo $this->get_field_id('displayviews') ?>" name="<?php echo $this->get_field_name('displayviews') ?>"
+       <input type="checkbox" id="<?php echo $this->get_field_id('displayviews') ?>" name="<?php echo esc_attr($this->get_field_name('displayviews')); ?>"
        	value="1" <?php checked($displayviews,1); ?> class="widefat">
        	<label for="<?php echo $this->get_field_id('displayviews') ?>"><?php esc_html_e('Display Views Count','popular-products-for-woocommerce');?></label>
        	</p>
 
        <p>
-       	<input type="checkbox" id="<?php echo $this->get_field_id('display_rating') ?>" name="<?php echo $this->get_field_name('display_rating') ?>"
+       	<input type="checkbox" id="<?php echo $this->get_field_id('display_rating') ?>" name="<?php echo esc_attr($this->get_field_name('display_rating')); ?>"
        	value="1" <?php checked($display_rating,1); ?> class="widefat">
        	<label for="<?php echo $this->get_field_id('display_rating') ?>"><?php esc_html_e('Display Rating','popular-products-for-woocommerce');?></label>
        	</p>
